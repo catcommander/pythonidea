@@ -33,7 +33,7 @@ while True:
     elif value == "2":
         qq_login()
     elif value == "4":
-        print("退出系统!!!！！！")
+        print("退出系统!!!！！")
         break
     else:
         print ("输入有误，请重新输入！")
