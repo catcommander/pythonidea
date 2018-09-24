@@ -93,9 +93,59 @@
 # t.make_test()
 
 #构造函数
-class Dog():
-    #__init__就是构造函数
-    #每次实例化的时候，第一个被自动调用
+# class Dog():
+#     #__init__就是构造函数
+#     #每次实例化的时候，第一个被自动调用
+#     def __init__(self):
+#         print("I am init a dog")
+# kaka = Dog()
+
+
+# class Animal():
+#     print("animal")
+# class Reptile(Animal):
+#     def __init__(self,name):
+#         print("Reptile")
+# class Crocodile(Reptile):
+#     def __init__(self):
+#         print("I am Crocodile" )
+# class snake(Crocodile):
+#     def __init__(self):
+#         print("I am snake")
+# c = snake()
+
+# class A():
+#     pass
+# class B(A):
+#     def __init__(self,name):
+#         print("B")
+#         print(name)
+# class C(B):
+#     def __init__(self):
+#         B.__init__(self,"lulu")
+#         print("C")
+# s = C()
+#
+
+class Person():
+    def sleep(self):
+        print("sleep")
+    def drink(self):
+        print("drink")
     def __init__(self):
-        print("I am init a dog")
-kaka = Dog()
+        print("eat")
+class Teacher(Person):
+    def word(self):
+        print("work")
+class Student(Person):
+     def study(self):
+         print("study")
+class goddess(Teacher,Student):
+    print("lulu喜欢")
+lulu = goddess()
+print(lulu)
+print(issubclass(goddess,Teacher))
+print(isinstance(lulu,goddess))
+print(hasattr(Person,"sleep"))
+
+
