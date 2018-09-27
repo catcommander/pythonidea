@@ -127,25 +127,81 @@
 # s = C()
 #
 
-class Person():
-    def sleep(self):
-        print("sleep")
-    def drink(self):
-        print("drink")
-    def __init__(self):
-        print("eat")
-class Teacher(Person):
-    def word(self):
-        print("work")
-class Student(Person):
-     def study(self):
-         print("study")
-class goddess(Teacher,Student):
-    print("lulu喜欢")
-lulu = goddess()
-print(lulu)
-print(issubclass(goddess,Teacher))
-print(isinstance(lulu,goddess))
-print(hasattr(Person,"sleep"))
+# class Person():
+#     def sleep(self):
+#         print("sleep")
+#     def drink(self):
+#         print("drink")
+#     def __init__(self):
+#         print("eat")
+# class Teacher(Person):
+#     def word(self):
+#         print("work")
+# class Student(Person):
+#      def study(self):
+#          print("study")
+# class goddess(Teacher,Student):
+#     print("lulu喜欢")
+# lulu = goddess()
+# print(lulu)
+# print(issubclass(goddess,Teacher))
+# print(isinstance(lulu,goddess))
+# print(hasattr(Person,"sleep"))
+
+# class Student ():
+#     def __init__(self,name ,age):
+#         self.name = name
+#         self.age = age
+#         self.setname(name)
+#     def intro(self):
+#         print("嘿，我是{0}".format(self.name))
+#     def setname(self, name):
+#         self.name = name.upper()
+#
+# s1 = Student("喵miaomiao",18)
+# s2 = Student("lulu",16)
+#
+# s1.intro()
+# s2.intro()
+
+
+#property案例
+#定义一个person类，具有name,age属性
+#对于任意输入的姓名，我们希望都用大写方式保存，对于年龄，同意用证书保存
+# X = property(fget,fset,fsel,doc)
+
+# class Person():
+#     def fget(self):
+#         return self._name * 2
+#     def fset(self,name):
+#         self._name = name.upper()
+#     def fdel(self):
+#         self._name = "NoName"
+#
+#     name = property(fget,fset,fdel,"对name进行下列操作")
+#
+# p1 = Person()
+# p1.name = "lulu"
+# print(p1.name)
+
+
+class Person ():
+    def __init__(self,name):
+        self.name = name
+    def __gt__(self, other):
+        print("哈哈，{0}会比{2}大吗？".format(self,other))
+        return self.name > other.name
+
+
+
+stu1 = Person("one")
+stu2 = Person("two")
+print(stu1 > stu2)
+
+
+
+
+
+
 
 
