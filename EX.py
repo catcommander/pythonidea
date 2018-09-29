@@ -185,18 +185,44 @@
 # print(p1.name)
 
 
-class Person ():
-    def __init__(self,name):
-        self.name = name
-    def __gt__(self, other):
-        print("哈哈，{0}会比{2}大吗？".format(self,other))
-        return self.name > other.name
+# class Person ():
+#     def __init__(self,name):
+#         self.name = name
+#     def __gt__(self, other):
+#         print("哈哈，{0}会比{2}大吗？".format(self,other))
+#         return self.name > other.name
+# stu1 = Person("one")
+# stu2 = Person("two")
+# print(stu1 > stu2)
+
+
+# class AA():
+#     pass
+# def cat():
+#     print("lulu")
+# class B():
+#     def miao(self):
+#         print("我们一起喵喵喵")
+#
+# cat()
+# b = AA()
+# b.c = cat
+# b.c()
+# b = B()
+# b.miao()
+# B().miao()
 
 
 
-stu1 = Person("one")
-stu2 = Person("two")
-print(stu1 > stu2)
+
+
+
+
+
+
+
+
+
 
 
 
