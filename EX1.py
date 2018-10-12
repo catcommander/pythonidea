@@ -89,26 +89,51 @@ import timeit
 # print("t2=",t2)
 # t3 = timeit.timeit(stmt=p,number=100000)
 # print("t3=",t3)
-s="""
-sum = []
-def p(m):
-    for i in range(m):
-        sum.append(i)
-        print(sum)
-"""
-t = timeit.timeit("p(m)",setup=s+"m=3",number=10000000)
 
 
+# s="""
+# sum = []
+# def p(m):
+#     for i in range(m):
+#         sum.append(i)
+#         print(sum)
+# """
+# t = timeit.timeit("p(m)",setup=s+"m=3",number=10000000)
+
+import os
+# myd = os.getcwd()
+# print(myd)
+
+# os.chdir()
+
+# ld = os.listdir()
+# print(ld)
+#
+# rst = os.makedirs("exp")
+# print(rst)
+
+# rst = os.system("touch lulu.doc")
+# print(rst)
+
+# print(os.name,os.linesep)
+
+import os.path as op
+# absp = op.abspath(".")
+# print(absp)
+# bn = op.basename("/pythonidea")
+# print(bn)
+
+# e = op.exists("p01")
+# d = op.exists("p01.py")
+# print(e,d)
+
+# rst = os.system("touch lulu.txt")
+# print(rst)
 
 
+import shutil
+# rst = shutil.copy("p01.py","p11.py")
+# print(rst)
 
-
-
-
-
-
-
-
-
-
-
+rst = shutil.copyfile("notebook.md","p02.py")
+print(rst)
