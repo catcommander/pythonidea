@@ -135,5 +135,31 @@ import shutil
 # rst = shutil.copy("p01.py","p11.py")
 # print(rst)
 
-rst = shutil.copyfile("notebook.md","p02.py")
-print(rst)
+# rst = shutil.copyfile("notebook.md","p02.py")
+# print(rst)
+
+# rst = shutil.move("exp/p11.py","p11.py")
+# print(rst)
+
+import zipfile,os
+# zf = zipfile.ZipFile("p11.zip",mode="a")
+# print(zf.getinfo("p11.py"))
+# nl = zf.namelist()
+# rst = zf.extractall("exp")
+# print(nl)
+
+import random
+# rst = [str(i)+"lulu" for i in range(10)]
+# l = random.choice(rst)
+# print(l)
+
+# l1 = [i for i in range(10)]
+# print(l1)
+# random.shuffle(l1)
+# print(l1)
+l1 = []
+for i in range(1011):
+    rst =  random.randint(0,100)
+    l1.append(rst)
+print(min(l1),max(l1))
+
