@@ -157,9 +157,51 @@ import random
 # print(l1)
 # random.shuffle(l1)
 # print(l1)
-l1 = []
-for i in range(1011):
-    rst =  random.randint(0,100)
-    l1.append(rst)
-print(min(l1),max(l1))
+
+
+# l1 = []
+# for i in range(1011):
+#     rst =  random.randint(0,100)
+#     l1.append(rst)
+# print(min(l1),max(l1))
+
+# stm = lambda x: 100 * x
+# print(stm(88))
+#
+# stm1 = lambda x,y,z: x+y+z
+# print(stm1(1,3,5))
+
+# def A(n):
+#     return n * 100
+# def B(n):
+#     return A(n)*10
+# print(B(9))
+# def C(k,n):
+#     return k(n) * 10
+# print(C(A,9))
+
+# def A(n):
+#     return n * 100
+# l1 = [i for i in range(11) ]
+# l2 = map(A,l1)
+# l2 = [i for i in l2]
+# print(l1,l2)
+
+from functools import reduce
+l1 = [i for i in range(11) ]
+def add(x,y):
+    return x+y
+rst = reduce(add,l1)
+print(rst)
+
+
+
+
+
+
+
+
+
+
+
 
