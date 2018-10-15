@@ -187,20 +187,56 @@ import random
 # l2 = [i for i in l2]
 # print(l1,l2)
 
-from functools import reduce
-l1 = [i for i in range(11) ]
-def add(x,y):
-    return x+y
-rst = reduce(add,l1)
-print(rst)
+# from functools import reduce
+# l1 = [i for i in range(11) ]
+# def add(x,y):
+#     return x+y
+# rst = reduce(add,l1)
+# print(rst)
+
+# def eve(n):
+#     return n % 2 == 0
+# l1 = [i for  i in range(20)]
+# print(l1)
+# rst = filter(eve,l1)
+# l2 = [i for i in rst]
+# print(l2)
+
+# a = [ 33,-2,2,-5,8,2,-1]
+# al = sorted(a)
+# a2 = sorted(a,reverse=True)
+# a3 = sorted(a,key=abs)
+# a4 = sorted(a,key=abs,reverse=True)
+# print(al)
+# print(a2)
+# print(a3)
+# print(a4)
+
+# def k1():
+#     def k2():
+#         def k3():
+#             print("snake")
+#             return 3
+#         return k3
+#     return k2
+# k = k1()
+# s = k()
+# s()
+# print(s())
+# print(s)
 
 
 
-
-
-
-
-
+def s1(*args):
+    def s2():
+        k = 0
+        for i in args:
+            k += i
+        return k
+    return s2
+snake = s1(1,2,3,4)
+snake()
+print(snake())
 
 
 

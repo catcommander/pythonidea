@@ -9,4 +9,3 @@ def sayhello():
     print("你好呀，又是充满希望的一天！")
 if __name__ == "__main__":
     print("一gay,我哩giao")
-
